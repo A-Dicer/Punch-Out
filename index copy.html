@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Punch-Out!!</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" 
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" 
+          crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  </head>
+  <body id="body">
+
+    <!-- Holds The Timer -->
+    <div class="container">
+
+      <!-- Information For Game And Category -->
+      <div class="row" id="top">
+        <div class="col-2" id="gameImg">
+          <img src="assets/images/boxArt.jpg" id="logo">
+        </div>
+        <div class="col-10 align-self-center" id="gameInfo">
+            <div class="row">
+              <div class="col-md-12">
+                Punch-Out!! (Wii)
+              </div>
+              <div class="col-md-12">
+                Single Segment - Any%
+              </div>
+            </div>
+        </div>   
+      </div>
+
+      <!-- Current Fighter Information -->
+      <div class="row" id="middleTop">
+          <div class="col-4" id="">
+              <img src="assets/images/fighters/BearHugger/TD.png" id="fImage">
+          </div>
+          <div class="col-8 align-self-center" id="">
+              <div class="row" id="fCard"> 
+                <div class="col-md-12 time">
+                    PB: 22 / 1:05 / 1:33.99
+                </div>
+                <div class="col-md-12 time">
+                    Gold: 22 / 1:04 / 1:33.53 
+                </div>
+                <div class="col-md-12 time">
+                    IL WR:  21 / 1:03 / 1:32.99
+                </div>
+              </div>
+          </div>                   
+      </div>
+
+      <!-- Split Information -->
+      <div class="row" id="middleBot">
+        <div class="col-12" id="cTitle">
+          Major Circuit TD
+        </div>
+        <div class="col-12" id="splits"> 
+          <div class="row">
+
+              <div class="col-12 sTitle">
+                <div class="row">
+                  <div class="col-5 sName">Opponent</div>
+                  <div class="col-2 sDelta"></div>
+                  <div class="col-5 sTime">Time</div>
+                </div>  
+              </div>
+
+            <div class="col-12 sInfo" id="split1">
+              <div class="row ">
+                <div class="col-6 sName" id="sName1">
+                  <img src="assets/images/fighters/PistonHondo/iconTD.png" class="icon">
+                  Piston Hondo
+                </div>
+                <div class="col-2 sDelta  ahead" id="sDelta1">-7.34</div>
+                <div class="col-4 sTime " id="sTime1">12:06.55</div>
+              </div>  
+            </div>
+
+            <div class="col-12 sInfo1 current" id="split2">
+                <div class="row">
+                  <div class="col-6 sName" id="sName2">
+                    <img src="assets/images/fighters/BearHugger/iconTD.png" class="icon">
+                    Bear Hugger
+                  </div>
+                  <div class="col-2 sDelta ahead" id="sDelta2"></div>
+                  <div class="col-4 sTime" id="sTime2">13:41.34</div>
+                </div>   
+              </div>
+
+              <div class="col-12 sInfo" id="split3">
+                  <div class="row ">
+                    <div class="col-6 sName" id="sName3">
+                        <img src="assets/images/fighters/GreatTiger/iconTD.png" class="icon">
+                        Great Tiger
+                      </div>
+                    <div class="col-2 sDelta behind" id="sDelta3"></div>
+                    <div class="col-4 sTime" id="sTime3">14:20.12</div>
+                  </div>    
+                </div>
+
+                <div class="col-12 sInfo1" id="split4">
+                    <div class="row ">
+                      <div class="col-6 sName" id="sName4">
+                          <img src="assets/images/fighters/DonFlamenco/iconTD.png" class="icon">
+                          Don Flamenco
+                        </div>
+                      <div class="col-2 sDelta glod" id="sDelta4"></div>
+                      <div class="col-4 sTime" id="sTime4">16:25.83</div>
+                    </div>  
+                </div>
+
+                <!-- <div class="col-12 sInfo" id="split5">
+                    <div class="row ">
+                      <div class="col-6 sName" id="sName5">
+                          <img src="assets/images/fighters/GlassJoe/icon.png" class="icon">
+                          Glass Joe
+                        </div>
+                      <div class="col-2 sDelta glod" id="sDelta5">-0.06</div>
+                      <div class="col-4 sTime" id="sTime5">26.61</div>
+                    </div>  
+                </div> -->
+
+                <div class="col-12" id="cTime">
+                    Circuit Time: 36.09
+                </div>
+            
+          </div>
+        </div>          
+      </div>
+
+      <!-- Current Time and Info -->
+      <div class="row" id="bottom">
+          <div class="row">
+            <div class="col-12 ahead">
+              <h1>12:06.55</h1>
+            </div>
+            <div class="col-12">
+              <div class="row info">
+                  <div class="col-6 word">Previous Fight:</div>
+                  <div class="col-6 number ahead" id="prevF">-0.73</div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="row info">
+                  <div class="col-6 word">Current Pace:</div>
+                  <div class="col-6 number">-</div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="row info">
+                  <div class="col-6 word">Sum of Best: </div>
+                  <div class="col-6 number">21:56.14</div>
+              </div>
+            </div>
+        </div> 
+    </div>
+
+  </div>
+
+  <!-- <div id="dataInput">
+    things it needs.... 
+  </div> -->
+
+  <script src="assets/javascript/game.js"></script>
+  
+  </body>
+</html>

@@ -1,0 +1,191 @@
+@font-face {
+    font-family: alienFont;
+    src: url(../fonts/fr-fal1.ttf);
+	}
+
+@font-face {
+	font-family: future;
+	src: url(../fonts/fr-bold.ttf);
+}
+
+body {
+	font-weight: bold;
+}
+
+.container {
+	margin-top: 20px;
+	border: solid #000 3px;
+	height: 609px;
+	width: 350px;
+	box-shadow: 2px 8px 20px 0px #000000;
+	overflow: hidden;
+}
+
+#top {
+	border-bottom: solid #000 3px;
+	height: 10%;
+	background-color: rgb(62, 62, 62);
+	color: #fff;
+	font-size: 18px;	
+}
+
+
+#logo{
+	height: 100%;
+}
+
+
+#middleTop {
+	background-image: url("../images/bg.jpg");
+	background-size: 155%;
+	background-position-x: -180px;
+	background-position-y: -50px;
+	border-bottom: solid #000 3px;
+	height: 20%;
+}
+
+#fImage{
+	height: 142%;
+	left: -10px;
+	top: 0;
+	position: absolute;
+	z-index: 3;
+}
+
+#fCard {
+	color: #000;
+	margin-right: -19px;
+}
+
+.time {
+	display: none;
+	text-align: center;
+	font-size: 18px;
+	margin: 2px;
+	border: solid #000 1px;
+	background-color: rgba(233, 233, 233, 0.94);
+}
+
+#middleBot {
+	border-bottom: solid #000 3px;
+	height: 60%;
+	background-color: rgb(104, 102, 102);
+	text-align: right;
+	color: #fff;
+}
+#cTitle {
+	height: 15%;
+	font-size: 30px;
+	text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+#splits {
+
+	overflow: hidden;
+
+}
+
+.current {
+	
+	background-color: rgb(113, 177, 245);
+	background: -webkit-linear-gradient(top, rgb(53, 130, 206) , rgb(158, 205, 252), rgb(113, 177, 245), rgb(53, 130, 206)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(top,rgb(53, 130, 206), rgb(158, 205, 252), rgb(113, 177, 245), rgb(53, 130, 206)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(top, rgb(53, 130, 206) , rgb(158, 205, 252),rgb(113, 177, 245), rgb(53, 130, 206)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(top, rgb(53, 130, 206), rgb(158, 205, 252), rgb(113, 177, 245), rgb(53, 130, 206)); /* Standard syntax */
+}
+
+.icon {
+	height: 20px;
+	margin-right: -5px;
+	position: relative;
+	left: -10px;
+	top: -1px;
+}
+.sInfo {
+	display: none;
+	background-color: #ccc;	
+	text-shadow: none;
+	color: #000;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-size: 15px;
+	border-bottom: solid #000 1px;
+}
+
+.sInfo1 {
+	display: none;
+	font-size: 15px;
+	background-color: rgb(158, 157, 157);	
+	text-shadow: none;
+	color: #000;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border-bottom: solid #000 1px;
+}
+
+.sName {
+	text-align: left;
+}
+
+.behind {
+	color: rgb(210, 56, 0);
+}
+
+.ahead {
+	color: rgb(0, 84, 18);
+}
+
+.pb {
+	color: rgb(63, 106, 237);
+}
+
+.glod {
+	color: rgb(4, 0, 218);
+	/* color: rgb(255, 246, 124); */
+}
+
+#bottom {
+	/* border: solid rgb(255, 0, 0) 1px; */
+	height: 10%;
+	background-color: rgb(255, 255, 255);
+}
+
+#totalTime {
+	max-width: 46.666667%;
+	flex: none;
+	font-size: 35px;
+	text-align: right;
+	text-shadow: 2px 2px 1px #ccc;
+}
+#prevF {
+	text-shadow: none;
+}
+#otherTime {
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 3px
+}
+
+.info {
+	font-size: 16px;
+    text-align: right;
+    margin-right: -4px;
+    margin-left: 9px;
+    margin-bottom: -4px;
+	margin-top: -1px;
+}
+
+.inputStuff {
+	font-size: 12px;
+	width:300px;
+	margin: 0 auto;
+	position: relative;
+	top: 40px;
+	padding: 10px;
+	
+}
+
+button {
+	margin: 5px 0;
+}

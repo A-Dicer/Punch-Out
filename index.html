@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Punch-Out!!</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" 
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" 
+          crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="assets/javascript/FileSaver.js"></script>
+    
+    
+  
+
+  </head>
+  <body id="body">
+
+    <!-- Holds The Timer -->
+    <div class="container">
+
+      <!-- Information For Game And Category -->
+      <div class="row" id="top">
+        <div class="col-2" id="gameImg">
+          <img src="assets/images/boxArt.jpg" id="logo">
+        </div>
+        <div class="col-10 align-self-center" id="gameInfo">
+            <div class="row">
+              <div class="col-md-12">
+                Punch-Out!! (Wii)
+              </div>
+              <div class="col-md-12">
+                Single Segment - Any%
+              </div>
+            </div>
+        </div>   
+      </div>
+
+      <!-- Current Fighter Information -->
+      <div class="row" id="middleTop">
+          <div class="col-4" id="">
+              <img src="" id="fImage">
+          </div>
+          <div class="col-8 align-self-center" id="">
+              <div class="row" id="fCard"> 
+                <div class="col-md-12 time" id="pbInfo">
+              
+                </div>
+                <div class="col-md-12 time" id="glodInfo">
+                
+                </div>
+                <div class="col-md-12 time" id="wrInfo">
+             
+                </div>
+              </div>
+          </div>                   
+      </div>
+
+      <!-- Split Information -->
+      <div class="row" id="middleBot">
+        <div class="col-12" id="splits"> 
+          <div class="row">            
+          </div>
+        </div>          
+      </div>
+
+      <!-- Current Time and Info -->
+      <div class="row" id="bottom">
+          <div class="row">
+
+            <div class="col-6" id="otherTime">
+              <div class="row">
+
+                <div class="col-12">
+                  <div class="row info">
+                      <div class="col-4 word">Prev:</div>
+                      <div class="col-2 word" id="prevF">-</div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="row info">
+                      <div class="col-4 word">Pace:</div>
+                      <div class="col-2 word" id="pace">-</div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="row info">
+                      <div class="col-4 word">sob: </div>
+                      <div class="col-2 word" id="sob"></div>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+          
+          <div class="col-5" id="totalTime">
+             0.00
+          </div>
+        
+        </div> 
+      </div>
+
+  </div>
+
+  <div class="inputStuff row" >
+    <div class="float-left" style="width: 20%; font-size: 12px">
+      <button class="float-right btn btn-primary " type="button" id="reset">RESET</button><br>
+      <button class="float-right btn btn-primary " type="button" id="start">START</button><br>
+      <button class="float-right btn btn-primary " type="button" id="savePB">Save PB</button>
+      <button class="float-right btn btn-primary " type="button" id="save">Save File</button>
+      
+    </div>
+    <div class="float-right" style="width: 150px; margin: 0 20px" >
+      <form id="splitInfoForm">
+          <h5 id="h5">-</h5>
+          <hr>
+          <div class="form-group float-left" style="width: 49%">
+              <label for="KD1">KD1</label>
+              <input  id="KD1" name="KD1" class="form-control" autofocus>
+          </div>
+          <div class="form-group float-right" style="width: 49%">
+              <label for="KD2">KD2</label>
+              <input  id="KD2" name="KD2" class="form-control" >
+          </div>
+
+          <div class="form-group">
+              <label for="splitTime">Split Time</label>
+              <input id="splitTime" name="splitTime" class="form-control" >
+          </div>
+
+          <button class="btn btn-primary btn-block" type="submit" id="timeEnter">Submit Time</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- <div id="dataInput">
+    things it needs.... 
+  </div> -->
+
+  <script src="assets/javascript/game.js"></script>
+  
+  </body>
+</html>
